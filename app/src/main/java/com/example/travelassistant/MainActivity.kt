@@ -16,7 +16,15 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(applicationContext, NavigationBarActivity::class.java)
                 startActivity(intent)
             }
+        })
 
+        //TEMPORARY
+        val signBtn: Button = findViewById(R.id.button3)
+        signBtn.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View?) {
+                val intent = Intent(applicationContext, TripOrganizationActivity::class.java)
+                startActivity(intent)
+            }
         })
     }
 }
