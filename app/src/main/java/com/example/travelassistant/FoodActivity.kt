@@ -3,8 +3,11 @@ package com.example.travelassistant
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class FoodActivity : AppCompatActivity() {
@@ -23,7 +26,5 @@ class FoodActivity : AppCompatActivity() {
         recyclerView.adapter = restaurantRecyclerViewAdapter
         recyclerView.adapter
 
-        val intent = Intent(applicationContext, NavigationBarActivity::class.java)
-        startActivity(intent)
     }
 }
