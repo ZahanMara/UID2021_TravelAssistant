@@ -21,6 +21,9 @@
         <activity
             android:name=".NavigationBarActivity"
             android:exported="false" />
+        <activity
+            android:name=".RateTripActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
